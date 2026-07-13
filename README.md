@@ -6,6 +6,7 @@
 A 64-bit hardware timer implemented on the Cora Z7 FPGA featuring start, stop, and reset functions. Achieves 20-nanosecond precision using custom Verilog IP and hardware-software control loops in C.
 
 ## Architectural Overview
+![Vivado Block Design showing Zynq PS and Timer IP](timer_diagram.png)
 Since a CPU is threaded carefully to be always busy, it cannot maintain a count which iterates at every rising or falling edge. To have a timer which is accurate at the nanosecond level, we can augment the CPU with an FPGA. 
 
 The CPU sends control signals to the FPGA, and the FPGA writes back its current count. All communication between the FPGA and CPU is handled through the AXI4-Lite protocol. 
