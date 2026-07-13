@@ -1,0 +1,32 @@
+# Vivado Log & Journal Files
+*.jou
+*.log
+*.str
+*.pb
+*.dmp
+
+# Vivado Temporary and Cache Directories
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Vitis / Eclipse IDE files
+.metadata/
+.Xil/
+RemoteSystemsTempFiles/
+*.o
+*.d
+*.elf
+*.bin
+
+# Hardware Export Files
+*.xsa
+*.bit
+*.ltx
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
