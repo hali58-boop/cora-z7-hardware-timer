@@ -32,7 +32,3 @@ The CPU dictates the timer's state by writing the following signals to the contr
 | `0` | Pause | Halts the counter without clearing the current value |
 | `2` | Reset | Clears `count_lo` and `count_hi` to zero |
 
-## Repository Structure
-* `/hdl` - Contains the Verilog source code for the custom timer IP.
-* `/src` - Contains the C application code for the Vitis project.
-* `/constraints` - Contains the physical constraints file (`.xdc`) for the Cora Z7.
